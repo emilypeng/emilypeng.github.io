@@ -10,22 +10,69 @@
         <nav>
             <ul>
                 <img src="/static/logo.jpg" alt="Reefly Logo" class="logo">
-                <li class="item"><a href="/home">home</a></li>
-                <li class="item"><a href="/learn">learn</a></li>
-                <li class="item"><a href="/quiz">quiz</a></li>
-                <li class="item"><a href="/fun" class="active">fun</a></li>
+                <li class="item"><a href="home.html">home</a></li>
+                <li class="item"><a href="learn.html">learn</a></li>
+                <li class="item"><a href="quiz.html">quiz</a></li>
+                <li class="item"><a href="fun.html" class="active">fun</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2 class="page-heading">what fish are you?</h2>
-
+            <form id="fish-quiz">
+                <div>
+                    <label>1. What's your favorite color?</label><br>
+                    <input type="radio" name="color" value="blue" required> Blue<br>
+                    <input type="radio" name="color" value="yellow"> Yellow<br>
+                    <input type="radio" name="color" value="orange"> Orange<br>
+                    <input type="radio" name="color" value="green"> Green<br>
+                </div>
+                <div>
+                    <label>2. How do you like to spend your day?</label><br>
+                    <input type="radio" name="activity" value="exploring" required> Exploring new places<br>
+                    <input type="radio" name="activity" value="relaxing"> Relaxing in the sun<br>
+                    <input type="radio" name="activity" value="socializing"> Hanging out with friends<br>
+                    <input type="radio" name="activity" value="adventuring"> Going on adventures<br>
+                </div>
+                <div>
+                    <label>3. Pick a snack:</label><br>
+                    <input type="radio" name="snack" value="algae" required> Algae<br>
+                    <input type="radio" name="snack" value="shrimp"> Shrimp<br>
+                    <input type="radio" name="snack" value="plankton"> Plankton<br>
+                    <input type="radio" name="snack" value="seaweed"> Seaweed<br>
+                </div>
+                <button type="submit">Find my fish!</button>
+            </form>
+            <div id="quiz-result" style="margin-top:20px; font-weight:bold;"></div>
         </section>
     </main>
     <footer>
         <p>&copy; emily p. '25</p>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+document.getElementById('fish-quiz').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const color = document.querySelector('input[name="color"]:checked').value;
+    const activity = document.querySelector('input[name="activity"]:checked').value;
+    const snack = document.querySelector('input[name="snack"]:checked').value;
+
+    let fish = '';
+    if (color === 'blue' && activity === 'exploring' && snack === 'shrimp') {
+        fish = "You're a Blue Tang! Adventurous and curious, just like Dory.";
+    } else if (color === 'yellow' && activity === 'relaxing' && snack === 'algae') {
+        fish = "You're a Yellow Tang! Calm and easygoing, you love to chill.";
+    } else if (color === 'orange' && activity === 'socializing' && snack === 'plankton') {
+        fish = "You're a Clownfish! Friendly and social, you love being with others.";
+    } else if (color === 'green' && activity === 'adventuring' && snack === 'seaweed') {
+        fish = "You're a Parrotfish! Bold and unique, always up for something new.";
+    } else {
+        fish = "You're a unique tropical fish with your own special personality!";
+    }
+
+    document.getElementById('quiz-result').textContent = fish;
+});
+</script>
 </body>
 </html>
