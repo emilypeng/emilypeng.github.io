@@ -42,7 +42,7 @@ function showQuestion() {
         <ul>
             ${q.options.map((opt, i) => `<li><button class="quiz-btn" onclick="selectAnswer(${i})">${opt}</button></li>`).join('')}
         </ul>
-        <p id="feedback"></p>
+        <b id="feedback"></b>
     `;
 }
 
@@ -69,7 +69,8 @@ function showResults() {
     const quizContainer = document.getElementById('quiz');
     quizContainer.innerHTML = `
         <h2 class="quiz-heading">Quiz Complete!</h2>
-        <p>Your score: ${score} / ${quizData.length}</p>
+        <p id="quiz-score">Your score: ${score} / ${quizData.length}</p>
+        <p id="feedback">Thanks for playing!</p>
         <button onclick="restartQuiz()">Restart</button>
     `;
 }
@@ -84,7 +85,7 @@ function showStartScreen() {
     const quizContainer = document.getElementById('quiz');
     quizContainer.innerHTML = `
         <h2 class="quiz-heading">reef responsibility quiz!</h2>
-        <p>Test your knowledge about reef safety and responsible snorkeling.</p>
+        <p id="txt">Test your knowledge about reef safety and responsible snorkeling.</p>
         <button class="quiz-btn" onclick="startQuiz()">Start Quiz</button>
     `;
 }

@@ -40,6 +40,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 61vh;
+    background-image: url("reef1.jpg")
 }
 
 .hp-button {
@@ -51,7 +53,7 @@
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 .hp-button:hover,
@@ -208,6 +210,22 @@ section {
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+#fishies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.standard {
+  max-width: fit-content;
+  border-radius: 10px;
+  height: 150px;
+  margin: 10px;
+}
+
 section ul {
   list-style-type: none;
   padding: 0;
@@ -249,7 +267,6 @@ section li {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* collapsible - #TODO */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #eee;
@@ -317,6 +334,46 @@ section li {
     transform: scale(0.98);
 }
 
+#quiz {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("reef2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quiz-heading{
+    color: #ffffff;
+    text-shadow: 1px 1px 8px #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#feedback {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#quiz-score {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 8px #000;
+}
+
+#txt {
+  color: white;
+  text-shadow: 3px 3px 8px #000;
+  font-style: italic;
+}
+
 /* GLOBAL STYLES */
 
 body {
@@ -334,7 +391,7 @@ h1, h2, h3 {
     color: #346b8d;
 }
 
-a {
+/* a {
     color: #4a90e2;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -342,7 +399,7 @@ a {
 
 a:hover {
     color: #357ab7;
-}
+} */
 
 .page-heading {
     text-align: center;
