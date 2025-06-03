@@ -101,9 +101,9 @@ h1, h2, h3 {
 /* NAVIGATION BAR */
 
 .logo {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
     overflow: hidden;
     margin-top: -6px;
     margin-bottom: -6px;
@@ -174,7 +174,7 @@ a {
 }
 
 .active {
-  color: #04AA6D;
+  color: #cd34b1;
 }
 
 .container {
