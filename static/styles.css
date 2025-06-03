@@ -12,6 +12,16 @@
     text-align: center;
     position: relative;
     color: white;
+    text-decoration: none;
+    transition:  color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro-link:hover {
+    color: #8fc8ea;
 }
 
 #myVideo {
@@ -44,12 +54,17 @@
     background-image: url("reef1.jpg")
 }
 
+.info {
+  text-align: center;
+  margin: 20px;
+}
+
 .hp-button {
     width: 300px;
     margin: 20px;
     padding: 60px;
     text-align: center;
-    background-color: #4a90e2;
+    background-color: #4a91e2d0;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -58,8 +73,8 @@
 
 .hp-button:hover,
 .hp-button:focus {
-  background-color: #357ab7;
-  color: #e0eafc;
+  background-color: #357ab7d0;
+  color: #ffffff;
   box-shadow: 0 4px 16px rgba(52, 107, 141, 0.15);
   transform: translateY(-4px) scale(1.03);
   transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
