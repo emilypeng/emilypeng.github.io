@@ -1,16 +1,17 @@
 /* INTRO PAGE */
 #intro-heading {
-    font-size: 2.5em;
+    font-size: 4em;
     text-align: center;
-    margin-top: 50px;
-    color: #4a90e2;
-    position: fixed;
+    color: #8fc8ea;
+    position: relative;
+    text-shadow: rgb(26, 133, 191) 1px 0 10px;
 }
 
 #intro-link {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
-    position: fixed;
+    position: relative;
+    color: white;
 }
 
 #myVideo {
@@ -21,9 +22,15 @@
   min-height: 100%;
 }
 
+.overlay {
+  position: relative;
+  justify-content: center;
+  top: 230px;
+  height: 100%;
+}
+
 #intro-container {
   background: rgba(0, 0, 0, 0.5);
-
 }
 
 /* HOMEPAGE */
@@ -78,6 +85,17 @@ h1, h2, h3 {
     margin: 20px 0;
     font-size: 2em;
     color: #4a90e2;
+}
+
+.page-subheading {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #357ab7;
+}
+
+.center {
+  text-align: center
 }
 
 /* NAVIGATION BAR */
@@ -174,6 +192,45 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* LEARN PAGE */
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* collapsible - #TODO */
+/* Style the button that is used to open and close the collapsible content */
+/* .collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+} */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .collapsible:hover {
+  background-color: #ccc;
+} */
+
+/* Style the collapsible content. Note: hidden by default */
+/* .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} */
+
 
 /* QUIZ */
 .quiz-btn {
