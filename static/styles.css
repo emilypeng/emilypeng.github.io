@@ -80,6 +80,16 @@ h1, h2, h3 {
     color: #346b8d;
 }
 
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #357ab7;
+}
+
 .page-heading {
     text-align: center;
     margin: 20px 0;
@@ -136,7 +146,7 @@ nav {
   align-items: center;
 }
 
-a {
+li:a {
   text-decoration: none;
   color: #fff;
   letter-spacing: 2px;
@@ -202,6 +212,74 @@ section {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.source {
+  display: list-item;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.source a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.source a:hover {
+  color: #4a90e2;
+}
+
+.quote {
+  font-style: italic;
+  color: #cd34b1;
+  margin: 10px 0;
+}
+
+.quote-src{
+  font-style: normal;
+  color: #000;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+#reef-sunscreen-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+section li {
+  display: flex;
+  flex: 0 1 45%;
+  margin: 14px 2.5%;
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: #cd34b1 100%;
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 10%;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(52, 107, 141, 0.10);
+  border: none;
+  word-break: break-word;
+  justify-content: center;
+  align-items: center;
 }
 
 /* collapsible - #TODO */
